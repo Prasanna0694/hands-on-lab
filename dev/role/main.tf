@@ -47,6 +47,5 @@ resource "aws_iam_role_policy_attachment" "s3_access" {
 resource "aws_iam_instance_profile" "ec2_profile" {
   name = "ec2-profile-role"
   role = aws_iam_role.ec2_role.name
-
   tags = local.common_tags
 }
