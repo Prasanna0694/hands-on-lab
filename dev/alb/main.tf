@@ -1,5 +1,5 @@
 resource "aws_lb" "alb" {
-  name = "project-4-alb"
+  name = "hands-on-lab-alb"
   internal = false
   load_balancer_type = "application"
    security_groups = [data.aws_security_group.app_sg.id]
@@ -23,7 +23,7 @@ resource "aws_lb_listener" "alb_listener" {
 }
 
 resource "aws_lb_target_group" "alb_target_group" {
-  name     = "project-4-alb-tg"
+  name     = "hands-on-lab-tg"
   port     = 80
   protocol = "HTTP"
   vpc_id   = data.aws_vpc.main.id
