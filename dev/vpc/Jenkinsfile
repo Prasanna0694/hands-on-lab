@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'develop', url: 'https://github.com/manju230/hands-on-lab.git'
+                git branch: 'develop', url: 'https://github.com/prasanna0694/hands-on-lab.git'
             }
         }
 
